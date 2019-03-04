@@ -4,10 +4,11 @@ class WeatherForm extends Component {
     
     render() { 
         return ( 
-            <div className="container">
+            <div className="container search-box">
+                <p>Search your perfect weather here...</p>
                 <form onSubmit={this.props.getweather}>
-                    <input type="text" name="city" placeholder="city---" />
-                    <input type="text" name="country" placeholder="country---" />
+                    <input type="text" name="country" placeholder="Type Your Country name..." />
+                    <input type="text" name="city" placeholder="Type Your City name..." />
                     <button type="submit">Get Weather</button>
                 </form>
             </div>
